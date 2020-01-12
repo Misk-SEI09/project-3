@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 // import logo from './logo.svg'
 import './App.css'
 import axios from 'axios'
-import images from './Components/Data/planetsImgs'
+import planetsMedia from './Components/Data/planetsMedia'
 
 class  App extends Component  {
   state = {
     plantes: [],
-    images: []
+    planetsMedia: []
   }  // end state
 
   componentDidMount(){
@@ -17,7 +17,7 @@ class  App extends Component  {
       //console.log(planets)
       let copyState = {...this.state}
       copyState.plantes = planets
-      copyState.images = images
+      copyState.planetsMedia = planetsMedia
       this.setState(copyState)
 
 
