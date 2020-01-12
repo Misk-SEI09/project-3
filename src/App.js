@@ -3,8 +3,13 @@ import React, { Component } from 'react'
 import './App.css'
 import axios from 'axios'
 import planetsMedia from './Components/Data/planetsMedia'
+
+import Header from './Components/Header'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+
 import Planet from './Components/Planets/Planets'
 import Planets from './Components/Planet/planet'
+
 
 class  App extends Component  {
   state = {
@@ -40,7 +45,14 @@ class  App extends Component  {
   render(){
     
   return (
+    <Router>
     <div className="App">
+
+      {/* <h1>hi</h1> */}
+      
+      <Header />
+
+
       {this.state.planets.map ((planet,index)=> {
         return (
           <Planet key={index} planet={planet}/>
@@ -48,7 +60,9 @@ class  App extends Component  {
       }) }
       
     <Planets planets={this.state.planets} planetsMedia={this.state.planetsMedia}/>
+
     </div>
+    </Router>
   )// end return
 } // end rendder
 } // end class App
