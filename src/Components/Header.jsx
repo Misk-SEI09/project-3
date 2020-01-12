@@ -14,6 +14,7 @@ function Header(){
          <Link to='/'>Category</Link> |
 
          {/* <Link to='/'>Weight</Link> */}
+         
         
 
 {/* <ul>
