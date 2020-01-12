@@ -4,6 +4,7 @@ import './App.css'
 import axios from 'axios'
 import planetsMedia from './Components/Data/planetsMedia'
 import Planet from './Components/Planet'
+import Planets from './Components/Planets/planets'
 
 class  App extends Component  {
   state = {
@@ -28,7 +29,7 @@ class  App extends Component  {
       //   return copyState
       // })
 
-      console.log(this.state)
+      //console.log(this.state)
     })
     .catch(function(error) {
       console.log("Got error",error)
@@ -46,7 +47,7 @@ class  App extends Component  {
         )
       }) }
       
-
+    <Planets planets={this.state.plantes} planetsMedia={this.state.planetsMedia}/>
     </div>
   )// end return
 } // end rendder
