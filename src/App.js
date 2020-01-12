@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 import './App.css'
 import axios from 'axios'
 import planetsMedia from './Components/Data/planetsMedia'
+import Header from './Components/Header'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 
 class  App extends Component  {
   state = {
@@ -37,10 +39,14 @@ class  App extends Component  {
   render(){
     
   return (
+    <Router>
     <div className="App">
+      {/* <h1>hi</h1> */}
       
+      <Header />
 
     </div>
+    </Router>
   )// end return
 } // end rendder
 } // end class App
