@@ -40,6 +40,11 @@ class  App extends Component  {
     
   return (
     <div className="App">
+      {this.state.plantes.map ((planet,index)=> {
+        return (
+          <Planet key={index} planet={planet}/>
+        )
+      }) }
       
 
     </div>
