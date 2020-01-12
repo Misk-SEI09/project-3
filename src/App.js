@@ -19,8 +19,6 @@ class  App extends Component  {
       copyState.plantes = planets
       copyState.planetsMedia = planetsMedia
       this.setState(copyState)
-
-
       // this.setState(({...copyState})=>{
       //   copyState.plantes = response.data.plan
       //   return copyState
