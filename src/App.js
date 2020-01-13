@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
+import { Button } from 'react-bootstrap';
 // import logo from './logo.svg'
 import './App.css'
 import axios from 'axios'
 import planetsMedia from './Components/Data/planetsMedia'
-
-import Header from './Components/Header'
+import Header from './Components/Header/Header'
 import {BrowserRouter as Router, Route, Link } from 'react-router-dom'
-
 import Planets from './Components/Planets/Planets.jsx'
 import Planet from './Components/Planet/planet.js'
+
 
 //import planetsInfo from './Components/Data/planets' // just in case the API did not work
 
@@ -16,7 +16,6 @@ class  App extends Component  {
   state = {
     planets: []
   }  // end state
-  
   componentDidMount(){
     axios.get(`https://cors-anywhere.herokuapp.com/https://dry-plains-91502.herokuapp.com/planets`)
     .then((response) =>{
@@ -28,7 +27,6 @@ class  App extends Component  {
         for(let i = 0; i < copyState.planets.length ; i++){
             copyState.planets[i].media = planetsMedia[i]
         }
-
       this.setState(copyState)
 
     })
@@ -47,12 +45,15 @@ class  App extends Component  {
       
       <Header />
 
-     <h1> <Link to="/planets">Planets</Link> </h1>
+     <Route path="/" exact render={() => {
+       return (
+        <h1> <Button  variant="outline-dark" ><Link to="/planets" style={{color:"white"}}>Planets</Link></Button> </h1>
+       )
+     }} />
 
       <Route path="/planets" exact render={ () => 
       <Planets planets={this.state.planets}/> } // sent the array to the component
       />
-
       <Route path="/planets/:id" render={ () => 
       <Planet planets={this.state.planets} /> 
        }/>
