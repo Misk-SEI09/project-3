@@ -7,11 +7,9 @@ function Header(){
  return(
      <nav >
          
-         <Button><Link to='/'>Home</Link></Button> |
-         
-         <Link to='/'>Read Later</Link> |
-         
-         <Link to='/'>Category</Link> |
+         <Button  variant="outline-dark" ><Link to='/' style={ {color:"white"} }>Home</Link></Button> |
+         <Button  variant="outline-dark" ><Link to='/' style={ {color:"white"} }>Read Later</Link></Button> |
+         <Button  variant="outline-dark" ><Link to='/' style={ {color:"white"} }>Category</Link></Button> |
 
          {/* <Link to='/'>Weight</Link> */}
          
