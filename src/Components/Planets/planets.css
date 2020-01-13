@@ -1,4 +1,40 @@
-.Image {
-    widows: 200px;
-    height:200px;
+@import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
+
+body{
+    font-family: 'Space Mono', monospace, Arial,sans-serif;
 }
+
+
+.Image {
+    width: 400px;
+    height: 360px;
+}
+
+.planets-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    margin: 10px;
+    background: rgba(34, 34, 34, 0.584);
+    border: 1px solid rgba(68, 45, 82, 0.714);
+    
+}
+
+.card:hover{
+    background:  #7a488570;
+    /* background: #7B7D83; */
+}
+
+a,h1, h3 {
+    color: #fff !important;
+}
+
+a:hover{
+    /* color: #7a4885 !important; */
+    color: rgb(137, 140, 147) !important;
+    
+}
+
