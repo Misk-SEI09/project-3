@@ -8,6 +8,8 @@ import Header from './Components/Header/Header'
 import {BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import Planets from './Components/Planets/Planets.jsx'
 import Planet from './Components/Planet/planet.js'
+import Footer from './Components/Footer/Footer'
+import About from './Components/About/About'
 
 
 //import planetsInfo from './Components/Data/planets' // just in case the API did not work
@@ -42,15 +44,12 @@ class  App extends Component  {
   return (
     <Router>
     <div className="App">
-      
       <Header />
-
      <Route path="/" exact render={() => {
        return (
         <h1> <Button  variant="outline-dark" ><Link to="/planets" style={{color:"white"}}>Planets</Link></Button> </h1>
        )
      }} />
-
       <Route path="/planets" exact render={ () => 
       <Planets planets={this.state.planets}/> } // sent the array to the component
       />
@@ -58,7 +57,13 @@ class  App extends Component  {
       <Planet planets={this.state.planets} /> 
        }/>
 
-
+      <Footer/>
+      <h1> Welcome </h1>
+      <p> Misk team: - Abduallah 
+        - Shahad
+        - Mashael
+        Story: Inspired by ......
+      </p>
     </div>
     </Router>
 
