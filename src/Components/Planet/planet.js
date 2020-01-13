@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter, Link } from 'react-router-dom'
 
+
 class Planet extends Component {
     // state = {  }
     render() { 
@@ -14,7 +15,7 @@ class Planet extends Component {
             <div>
                 {planetObj ? 
                     <div>
-                        <h1>THIS IS A SINGLE PLANET COMPONENT</h1>
+                        {/* <h1>THIS IS A SINGLE PLANET COMPONENT</h1> */}
                         <h3>{planetObj.id} {planetObj.name} {planetObj.gravity} </h3>
                         <img className= "Image" src={planetObj.media.imgUrl} alt="" width="700" height="600"/>
                         <br />
