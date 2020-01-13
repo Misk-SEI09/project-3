@@ -10,6 +10,7 @@ function Header(){
          <Button  variant="outline-dark" ><Link to='/' style={ {color:"white" } }>Home</Link></Button> |
          <Button  variant="outline-dark" ><Link to='/' style={ {color:"white"} }>Read Later</Link></Button> |
          <Button  variant="outline-dark" ><Link to='/' style={ {color:"white"} }>Category</Link></Button> |
+         <Button  variant="outline-dark" ><Link to='/search' style={ {color:"white"} }>Search</Link></Button> |
 
          {/* <Link to='/'>Weight</Link> */}
          
