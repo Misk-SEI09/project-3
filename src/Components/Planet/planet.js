@@ -20,7 +20,12 @@ class Planet extends Component {
                         <img className= "Image" src={planetObj.media.imgUrl} alt="" width="700" height="600"/>
                         <br />
                         <h1><Link to="/planets">Back</Link></h1>
+                        {/* <link ref={planetObj.media.imgUrl}>Go watch video</link> */}
+                    
+                        <a target='_blank' href={planetObj.media.vidUrl}> Go watch video </a>
+
                     </div>
+
                 : null}
                 
             </div>
