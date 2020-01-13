@@ -5,17 +5,18 @@ import axios from 'axios'
 import planetsMedia from './Components/Data/planetsMedia'
 
 import Header from './Components/Header'
-import {BrowserRouter as Router, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
-import Planet from './Components/Planets/Planets'
-import Planets from './Components/Planet/planet'
+import Planets from './Components/Planets/Planets.jsx'
+import Planet from './Components/Planet/planet.js'
 
+//import planetsInfo from './Components/Data/planets' // just in case the API did not work
 
 class  App extends Component  {
   state = {
     planets: []
   }  // end state
-
+  
   componentDidMount(){
     axios.get(`https://cors-anywhere.herokuapp.com/https://dry-plains-91502.herokuapp.com/planets`)
     .then((response) =>{
@@ -23,18 +24,13 @@ class  App extends Component  {
       console.log(planets)
       let copyState = {...this.state}
       copyState.planets = planets
-      // copyState.planetsMedia = planetsMedia
+
         for(let i = 0; i < copyState.planets.length ; i++){
             copyState.planets[i].media = planetsMedia[i]
         }
-      console.log(copyState.planets)
-      this.setState(copyState)
-      // this.setState(({...copyState})=>{
-      //   copyState.planets = response.data.plan
-      //   return copyState
-      // })
 
-      //console.log(this.state)
+      this.setState(copyState)
+
     })
     .catch(function(error) {
       console.log("Got error",error)
@@ -42,27 +38,29 @@ class  App extends Component  {
     
   } // end componet didmount
 
+
   render(){
     
   return (
     <Router>
     <div className="App">
-
-      {/* <h1>hi</h1> */}
       
       <Header />
 
+     <h1> <Link to="/planets">Planets</Link> </h1>
 
-      {this.state.planets.map ((planet,index)=> {
-        return (
-          <Planet key={index} planet={planet}/>
-        )
-      }) }
-      
-    <Planets planets={this.state.planets} planetsMedia={this.state.planetsMedia}/>
+      <Route path="/planets" exact render={ () => 
+      <Planets planets={this.state.planets}/> } // sent the array to the component
+      />
+
+      <Route path="/planets/:id" render={ () => 
+      <Planet planets={this.state.planets} /> 
+       }/>
+
 
     </div>
     </Router>
+
   )// end return
 } // end rendder
 } // end class App
