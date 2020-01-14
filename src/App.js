@@ -10,7 +10,7 @@ import Planets from './Components/Planets/Planets.jsx'
 import Planet from './Components/Planet/planet.js'
 import Footer from './Components/Footer/Footer'
 import About from './Components/About/About'
-import Search from "./Components/Search/Search";
+import Search from "./Components/Search/Search"
 
 //import planetsInfo from './Components/Data/planets' // just in case the API did not work
 
@@ -67,10 +67,15 @@ class  App extends Component  {
     
 
     <Route path="/search" exact component={Search}/>
-    
-
       
-    </div>
+        <Route path="/about" render ={()=> {
+          return (
+            <h1>this is about page</h1>
+          )  
+          }}>
+            
+          </Route>
+      </div>
   )// end return
 } // end rendder
 } // end class App
