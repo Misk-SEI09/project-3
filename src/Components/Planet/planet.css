@@ -2,10 +2,19 @@ p , h2{
     color: #fff !important;
     text-align: center;
     font-size: 20px;
+ order: 2px solid black;
+  margin-top: -7px;
+  margin-bottom: px;
+  /* margin-right: 80px; */
+  /* margin-left: 80px; */
+  /* background-color:; */
+
 }
 
 img{
-    float: left
+    float: left;
+    background-position: right;
+    
 
 }
 .target{
@@ -19,6 +28,11 @@ h3{
     display: inline;
     align-items: flex-end;
 }
-.target{
+/* .target{
     color:"white"
-}
+} */
+
+a:hover {
+    background-color:black;
+    
+  }

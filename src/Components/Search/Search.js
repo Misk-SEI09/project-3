@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "./Search.css"
+// import "./Search.css"
 
 class Search extends Component {
     state = {  }
