@@ -5,7 +5,7 @@ import './App.css'
 import axios from 'axios'
 import planetsMedia from './Components/Data/planetsMedia'
 import Header from './Components/Header/Header'
-import {BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import {Route,Link } from 'react-router-dom'
 import Planets from './Components/Planets/Planets.jsx'
 import Planet from './Components/Planet/planet.js'
 import Footer from './Components/Footer/Footer'
@@ -42,7 +42,7 @@ class  App extends Component  {
   render(){
     
   return (
-    <Router>
+   
     <div className="App">
       <Header />
      <Route path="/" exact render={() => {
@@ -64,13 +64,13 @@ class  App extends Component  {
         - Mashael
         Story: Inspired by ......
       </p>
-    </div>
+    
 
     <Route path="/search" exact component={Search}/>
-    </Router>
+    
 
       
-
+    </div>
   )// end return
 } // end rendder
 } // end class App
