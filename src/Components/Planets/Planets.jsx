@@ -10,7 +10,9 @@ class Planets extends Component {
         // console.log(this.props)
         return ( 
             <div >
+                <br/>
                 <h3>Your Journey Gateway To Explore the Solar System Planets</h3>
+                <br/>
             <div className="planets-container" >
                  {this.props.planets.map( (planet, index) => {
                 return <div key={index} className="card">

@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-
+import './Footer.css'
 class Footer extends Component {
     render() {
         return (
-            <div><footer className="footer" style={{color:"white"}}>
-                <h5> 2020 | All Rights Reserved
-                    Saudi Arabia </h5>
-                </footer></div>
+          
+                <footer className="Footer" style={{color:"white"}}>
+                <h6> 2020 | All Rights Reserved </h6>
+                <h5>  Saudi Arabia </h5> 
+                </footer>
+             
         )
 
     }

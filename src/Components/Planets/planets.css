@@ -20,21 +20,25 @@ body{
     margin: 10px;
     background: rgba(34, 34, 34, 0.584);
     border: 1px solid rgba(68, 45, 82, 0.714);
-    
+    box-shadow: 8px 8px 10px grey;
 }
+
 
 .card:hover{
     background:  #7a488570;
     /* background: #7B7D83; */
+    box-shadow: 15px 15px 25px grey;
 }
 
 a,h1, h3 {
-    color: #fff !important;
+    /* color: #fff !important; */
+    color: #fff;
 }
 
 a:hover{
     /* color: #7a4885 !important; */
-    color: rgb(137, 140, 147) !important;
+    /* color: rgb(137, 140, 147) !important; */
+    color: rgb(137, 140, 147)
     
 }
 

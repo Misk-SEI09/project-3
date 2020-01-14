@@ -1,5 +1,6 @@
 p , h2{
-    color: #fff !important;
+    /* color: #fff !important; */
+    color: #fff ;
     text-align: center;
     font-size: 20px;
  order: 2px solid black;

@@ -1,0 +1,15 @@
+.Footer {
+    display: flex;
+    flex-direction: column;
+    /* position: fixed;
+    right: 10px;
+    bottom: 10px; */
+    /* position: absolute;
+    bottom: 10px;
+    right: 10px; */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}

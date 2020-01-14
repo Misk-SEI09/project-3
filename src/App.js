@@ -56,26 +56,19 @@ class  App extends Component  {
       <Route path="/planets/:id" render={ () => 
       <Planet planets={this.state.planets} /> 
        }/>
-
-      <Footer/>
-      <h1> Welcome </h1>
-      <p> Misk team: - Abduallah 
-        - Shahad
-        - Mashael
-        Story: Inspired by ......
-      </p>
     
 
     <Route path="/search" exact component={Search}/>
       
-        <Route path="/about" render ={()=> {
-          return (
-            <h1>this is about page</h1>
-          )  
-          }}>
-            
-          </Route>
-      </div>
+    <Route path="/about" render ={()=> {
+      return (
+        <About/>
+      )  
+      }}></Route>
+
+{/*   <h2>يقول عز و جل: (تَبَارَكَ الَّذِي جَعَلَ فِي السَّمَاء بُرُوجاً وَجَعَلَ فِيهَا سِرَاجاً وَقَمَراً مُّنِيراً)الفرقان: 61</h2> */}
+        <Footer/>
+        </div>
   )// end return
 } // end rendder
 } // end class App
