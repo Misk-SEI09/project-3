@@ -1,3 +1,8 @@
+
+body{
+  position: relative;
+}
+
 .App {
   text-align: center;
   background-image: url('https://images.unsplash.com/photo-1507275016429-544fc0875edd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1649&q=80');
