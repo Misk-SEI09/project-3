@@ -10,7 +10,8 @@ import Planets from './Components/Planets/Planets.jsx'
 import Planet from './Components/Planet/planet.js'
 import Footer from './Components/Footer/Footer'
 import About from './Components/About/About'
-import Search from "./Components/Search/Search"
+import Search from "./Components/Search/Search";
+import Category from './Components/category/category'
 
 //import planetsInfo from './Components/Data/planets' // just in case the API did not work
 
@@ -45,9 +46,10 @@ class  App extends Component  {
    
     <div className="App">
       <Header />
+    
      <Route path="/" exact render={() => {
        return (
-        <h1> <Button  variant="outline-dark" ><Link to="/planets" style={{color:"white"}}>Planets</Link></Button> </h1>
+      <h1> <Button  variant="outline-dark" ><Link to="/planets" style={{color:"white"}}>Planets</Link></Button> </h1>
        )
      }} />
       <Route path="/planets" exact render={ () => 
@@ -56,6 +58,16 @@ class  App extends Component  {
       <Route path="/planets/:id" render={ () => 
       <Planet planets={this.state.planets} /> 
        }/>
+       
+      <Route exact path="/category"  component={Category}/>
+
+      <Footer/>
+      <h1> Welcome </h1>
+      <p> Misk team: - Abduallah 
+        - Shahad
+        - Mashael
+        Story: Inspired by ......
+      </p>
     
 
     <Route path="/search" exact component={Search}/>
