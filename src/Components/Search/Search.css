@@ -1,4 +1,42 @@
 .search-container{
-    background: rgb(44, 89, 123);
+    /* background: rgb(44, 89, 123); */
 }
 
+.card-img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.search-card{
+    background:  rgb(34, 34, 34, 0.584) !important;
+    border: 1px solid rgba(123, 79, 150, 0.714) !important; 
+    /* rgba(123, 79, 150, 0.714) */
+    box-shadow: 2px 8px 10px grey !important;
+}
+
+
+.search-card:hover{
+    background:  rgba(45, 44, 44, 0.584) !important;
+    /* background: #7B7D83; */
+    
+}
+
+
+.input-group{
+    justify-content: center !important;
+}
+
+.input-group-rounded .input-group-field {
+    border-radius: 5000px 0 0 5000px;
+    padding-left: 1rem;
+   
+  }
+  
+  .input-group-rounded .input-group-button .button {
+    border-radius: 0 5000px 5000px 0;
+    font-size: 0.8rem;
+    height: 40px;
+    width: 100px;
+  }
+  
+  

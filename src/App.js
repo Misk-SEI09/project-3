@@ -62,12 +62,7 @@ class  App extends Component  {
       <Route exact path="/category"  component={Category}/>
 
       <Footer/>
-      <h1> Welcome </h1>
-      <p> Misk team: - Abduallah 
-        - Shahad
-        - Mashael
-        Story: Inspired by ......
-      </p>
+    
     
 
     <Route path="/search" exact component={Search}/>

@@ -62,30 +62,33 @@ class Search extends Component {
         console.log("hey  am seach component") 
         return ( 
             <div className="search-container">
-                <h1>This is search Component</h1>
-                <form  onSubmit={this.handleSubmit}>
+                <h1>Get lost in Space</h1>
+                <form  onSubmit={this.handleSubmit} className="input-group input-group-rounded">
                     
-                    <label>Get lost in Space </label><br />
+                    {/* <label>Get lost in Space </label><br /> <br/> */}
                         <input 
+                        className="input-group-field"
                         name="keyword"
                         value={this.state.formData.keyword}
-                        placeholder="Search for anything in space"
+                        placeholder="anything in space"
                         onChange={this.handleChange}
                         ></input>
                     <br/>
-
-                    <button type="submit">Submit</button>
+                    
+                    <div class="input-group-button">
+                         <input type="submit" class="button secondary" value="Search"/>
+                    </div>
                 </form>
 
 
-                   <div class="card-columns">
+                   <div className="card-columns">
                         
                         {this.state.apiData.map( (data, index) => (
-                                <div className="card" key={index}>
+                                <div className="card search-card" key={index}>
                                     <div className="card-body">
-                                        <img src={data.links[0].href} alt="" style={{clear: "both"}}/> 
-                                        <p style={{clear: "both", paddingTop: "10px"}}> {data.data[0].title} </p>
-                                        <em> {data.data[0].description} </em>
+                                        <img className={"card-img"} src={data.links[0].href} alt="" style={{clear: "both"}}/> 
+                                        <p style={{clear: "both", paddingTop: "10px", color: "white"}}> {data.data[0].title} </p>
+                                        <em style={{color: "white"}}> {data.data[0].description} </em>
                                     </div>
                                 </div>
                             ))}  
