@@ -1,0 +1,10 @@
+#dropdown-basic{
+    background-color: initial;
+    /* border: ivory; */
+    color: #343a40;
+    border-color: #343a40  !important;
+    color: white; 
+}
+.btn-success{
+    border-color: #343a40;
+}
