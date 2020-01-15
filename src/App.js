@@ -47,11 +47,12 @@ class  App extends Component  {
     <div className="App">
       <Header />
     
-     <Route path="/" exact render={() => {
+     {/* <Route path="/" exact render={() => {
        return (
       <h1> <Button  variant="outline-dark" ><Link to="/planets" style={{color:"white"}}>Planets</Link></Button> </h1>
        )
-     }} />
+     }} /> */}
+       
       <Route path="/planets" exact render={ () => 
       <Planets planets={this.state.planets}/> } // sent the array to the component
       />
@@ -59,7 +60,7 @@ class  App extends Component  {
       <Planet planets={this.state.planets} /> 
        }/>
        
-      <Route exact path="/category"  component={Category}/>
+    
 
       <Footer/>
     

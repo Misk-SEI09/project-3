@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {Link } from "react-router-dom"
+import './category.css'
 
 import {Dropdown} from 'react-bootstrap'
 
@@ -14,12 +15,12 @@ class Category extends Component{
              <div className="dropdown" >
 <Dropdown>
   <Dropdown.Toggle variant="success" id="dropdown-basic">
-    planets 
+    Category 
 
   </Dropdown.Toggle>
 
   <Dropdown.Menu>
-    <Dropdown.Item href="/planets/1">Mercury</Dropdown.Item>
+    <Dropdown.Item  href="/planets/1">Mercury</Dropdown.Item>
     <Dropdown.Item href="planets/2">Venus</Dropdown.Item>
     <Dropdown.Item href="planets/3">Earth</Dropdown.Item>
     <Dropdown.Item href="planets/4">Moon</Dropdown.Item>
