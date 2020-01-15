@@ -12,6 +12,7 @@ import Footer from './Components/Footer/Footer'
 import About from './Components/About/About'
 import Search from "./Components/Search/Search";
 import Category from './Components/category/category'
+import Weight from "./Components/Weight/Weight";
 
 //import planetsInfo from './Components/Data/planets' // just in case the API did not work
 
@@ -60,7 +61,8 @@ class  App extends Component  {
       <Planet planets={this.state.planets} /> 
        }/>
     <Route path="/search" exact component={Search}/>
-      
+    <Route path="/weight" exact render={ () => 
+    <Weight planets={this.state.planets}/>} />
     <Route path="/about" render ={()=> {
       return (
         <About/>
