@@ -59,13 +59,6 @@ class  App extends Component  {
       <Route path="/planets/:id" render={ () => 
       <Planet planets={this.state.planets} /> 
        }/>
-       
-    
-
-      <Footer/>
-    
-    
-
     <Route path="/search" exact component={Search}/>
       
     <Route path="/about" render ={()=> {

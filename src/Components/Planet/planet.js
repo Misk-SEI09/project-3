@@ -18,12 +18,11 @@ class Planet extends Component {
                     <div className="container">
                         {/* <h1>THIS IS A SINGLE PLANET COMPONENT</h1> */}
                         <h2 className="card-title"> {planetObj.name}  </h2> 
-                        <br></br>
+                        
                         <img className= "Image" src={planetObj.media.imgUrl} alt="" width="700" height="600"/>
-                        <br/>
-                        <br/>
+
                         <p className="card-text">{planetObj.media.descrpition}</p> 
-                        <a className="target" target='_blank' href={planetObj.media.vidUrl} style={ {color:"white" } }> Go watch video </a>
+                        <a className="target" target='_blank' href={planetObj.media.vidUrl} style={ {color:"white" } }> Watch video! </a>
                         <br />
                         <br />
                         <h3 className="border border-dark"><Link to="/planets" style={ {color:"white" } }>Back</Link></h3>
