@@ -1,7 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lalezar|Rasa|Sulphur+Point|Varela+Round&display=swap');
-h1 {
-    
+@import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
+.main h1 {
+    font-family: 'Varela Round', sans-serif;
+    color: grey;
+
     color: lightgrey;
     font-display: 14px ;
 
@@ -9,7 +12,7 @@ h1 {
 .main {
     display: flex;
     flex-direction: column;
-    
+
 }
 .about {
     border: 2px solid black;
@@ -18,10 +21,15 @@ h1 {
     justify-content: center;
     border-radius: 25px;
     margin: 5px auto;
-    
+
 }
 .about p {
     color:black;
     padding: 10px;
     font-family: 'Sulphur Point', sans-serif;
+} 
+.main h2 {
+    font-family: 'Space Mono', monospace, Arial,sans-serif;
+    font-size: 20px;
+    text-align: center;
 }

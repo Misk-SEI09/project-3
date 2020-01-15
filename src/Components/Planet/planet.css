@@ -1,31 +1,53 @@
-p , h2{
+@import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Lalezar|Rasa|Sulphur+Point|Varela+Round&display=swap');
+
+.container p , h2{
     /* color: #fff !important; */
     color: #fff ;
-    text-align: center;
+    text-align: justify;
     font-size: 20px;
- order: 2px solid black;
   margin-top: -7px;
   margin-bottom: px;
   /* margin-right: 80px; */
   /* margin-left: 80px; */
   /* background-color:; */
+  
+
+}
+.container p {
+
 
 }
 
-img{
+/* img{
     float: left;
     background-position: right;
     
 
-}
+} */
+ .Image {
+        float: left;
+        background-position: right;
+
+    border: 1px solid black;
+        border-radius: 25px;
+        margin-right: 10px;
+
+    width: 360px;
+    height: 320px;
+    }
 .target{
     display: flex;
     float: right;
 }
 .container{
+
+    font-family: 'Space Mono', monospace, Arial,sans-serif;
+    text-align: center;
     margin-top:100px ;
 }
-h3{
+.container h3{
     display: inline;
     align-items: flex-end;
 }
@@ -33,7 +55,16 @@ h3{
     color:"white"
 } */
 
-a:hover {
+.container a:hover {
     background-color:black;
     
+  }
+  .card-title{
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+  }
+  .card-text{
+    text-align: justify;
+    margin: 10px;
+
   }
