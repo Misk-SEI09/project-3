@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
 
-body{
+/* body{
+    font-family: 'Space Mono', monospace, Arial,sans-serif;
+} */
+.planets{
     font-family: 'Space Mono', monospace, Arial,sans-serif;
 }
 
-
-.Image {
+.Img {
     width: 360px;
     height: 320px;
 }

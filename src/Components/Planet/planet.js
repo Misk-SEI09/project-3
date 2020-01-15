@@ -20,16 +20,14 @@ class Planet extends Component {
                         <h2 className="card-title"> {planetObj.name}  </h2> 
                         <br></br>
                         <img className= "Image" src={planetObj.media.imgUrl} alt="" width="700" height="600"/>
-                        
-                        <p className="card-text">{planetObj.media.descrpition}</p> <br/>
-                        <a className="target" target='_blank' href={planetObj.media.vidUrl}> Go watch video </a>
+                        <br/>
+                        <br/>
+                        <p className="card-text">{planetObj.media.descrpition}</p> 
+                        <a className="target" target='_blank' href={planetObj.media.vidUrl} style={ {color:"white" } }> Go watch video </a>
                         <br />
                         <br />
-                        <h3 className="border border-dark"><Link to="/planets">Back</Link></h3>
+                        <h3 className="border border-dark"><Link to="/planets" style={ {color:"white" } }>Back</Link></h3>
                         {/* <link ref={planetObj.media.imgUrl}>Go watch video</link> */}
-                    
-                       
-
                     </div>
 
                 : null}
