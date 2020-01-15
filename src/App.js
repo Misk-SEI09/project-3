@@ -44,7 +44,7 @@ class  App extends Component  {
     
   return (
    
-    <div className="App">
+    <div className="App ">
       <Header />
     
      {/* <Route path="/" exact render={() => {
@@ -67,7 +67,16 @@ class  App extends Component  {
       )  
       }}></Route>
 
-{/*   <h2>يقول عز و جل: (تَبَارَكَ الَّذِي جَعَلَ فِي السَّمَاء بُرُوجاً وَجَعَلَ فِيهَا سِرَاجاً وَقَمَراً مُّنِيراً)الفرقان: 61</h2> */}
+    <Route path="/" exact render={ () => {
+      return ( <div className="space-bg mdl-img">
+        <h1 style={{paddingTop: "50px"}} >Explore The Space</h1>
+        <h2 style={{marginTop: "100px", paddingBottom: "50px", marginBottom: "0px"}}>يقول عز و جل: (تَبَارَكَ الَّذِي جَعَلَ فِي السَّمَاء بُرُوجاً وَجَعَلَ فِيهَا سِرَاجاً وَقَمَراً مُّنِيراً)الفرقان: 61</h2> 
+        <img className="mdl-img" src={"https://images.unsplash.com/photo-1506272517965-ec6133efee7a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80"}/>
+        </div>
+        )
+    }}/>
+
+  
         <Footer/>
         </div>
   )// end return

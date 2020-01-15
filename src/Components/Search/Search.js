@@ -62,8 +62,8 @@ class Search extends Component {
         console.log("hey  am seach component") 
         return ( 
             <div className="search-container">
-                <h1>Get lost in Space</h1>
-                <form  onSubmit={this.handleSubmit} className="input-group input-group-rounded">
+                <h1 style={{marginTop: "30px"}}>Get lost in Space</h1>
+                <form  onSubmit={this.handleSubmit} className="input-group input-group-rounded"  style={{marginTop: "50px", marginBottom: "40px"}}>
                     
                     {/* <label>Get lost in Space </label><br /> <br/> */}
                         <input 

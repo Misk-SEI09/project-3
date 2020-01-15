@@ -5,6 +5,14 @@
     border-color: #343a40  !important;
     color: white; 
 }
-.btn-success{
-    border-color: #343a40;
+.show > .btn-success.dropdown-toggle{
+    border-color: #343a40 !important;
+    /* background-color: #343a40 !important; */
+}
+
+
+
+.change-color:hover{
+    background: black !important;
+    color: white !important;
 }

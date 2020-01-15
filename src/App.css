@@ -48,3 +48,17 @@ body{
     transform: rotate(360deg);
   }
 }
+
+.space-bg{
+  background-image: url("https://i.giphy.com/media/3o7aDcrsww5Ybp18hq/giphy.webp");
+  opacity: 0.8;
+  /* filter: alpha(opacity=50); */
+  margin-bottom: 0%;
+}
+
+.mdl-img{
+  margin-top: 0%;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+}
