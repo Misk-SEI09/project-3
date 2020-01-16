@@ -32,6 +32,9 @@
 
 
 ## Wire frame 
-![wire frame](wire-frame-1.jpg)
 
-![wire frame](wire-frame-2.jpg)
+![wireframe-1](images\wireframe-1-.jpg)
+
+![wireframe-1](images\wireframe-1-2.jpg)
+
+![wireframe-2](images\wireframe-2-.jpg)
